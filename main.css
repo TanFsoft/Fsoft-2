@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.head{
+    background-image: url(./image/beach3.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* object-fit: cover; */
+    position: relative;
+}
+.content{
+    position: absolute;
+    background-color: rgb(251, 217, 92);
+    width: 40%;
+    opacity: 0.7;
+    font-size: 30px;
+    top: 70%;
+    /* padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    padding: 20px 0 20px 30px;
+    font-weight: 700;
+}
+/* ===content=== */
+.content-img{
+    display: flex;
+    /* margin-top: 50px; */
+    margin: 50px 0px 50px 0px;    
+    /* background-color: rgb(94, 59, 12); */
+    justify-content: space-around;
+}
+.left {
+    width: 50%;
+    margin-left: 75px;
+    /* background-color: rgb(152, 152, 11); */
+}
+.left img + p ,.right img + p {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.right {
+    width: 50%;
+    /* background-color: blue; */
+}
+.right img {
+    left: 100%;
+}
+/* =====3,4 */
+.content-img2{
+    display: flex;
+    /* margin-top: 50px; */
+    margin: 50px 0px 50px 0px;    
+    /* background-color: rgb(94, 59, 12); */
+    justify-content: space-around;
+}
+.content-img2 .right img {
+    width: 90%;
+    object-fit: cover;
+
+}
+img {
+    border-top: 5px solid rgb(222, 200, 34);
+}
+img:hover{
+    margin: 0px 10px;
+    animation: animation 3s infinite linear;
+}
+
+
+
+/* ===reponsive== */
+
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS */ 
+  }
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+        /* CSS */
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    /* CSS */
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    .head{
+        background-image: url(./image/beach3.jpg);
+        height: 70vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* object-fit: cover; */
+        position: relative;
+    }
+    .content{
+        position: absolute;
+        background-color: rgb(251, 217, 92);
+        width: 100%;
+        opacity: 0.5;
+        font-size: 30px;
+        top: 50%;
+        /* padding-left: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px; */
+        padding: 20px 0 20px 30px;
+        font-weight: 700;
+    }
+    /* ===content=== */
+    .content-img{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;    
+    }
+    .left {
+        width: 100%;
+        margin-left: 0px;
+        text-align: center;
+        margin-bottom:20px;
+        /* background-color: rgb(152, 152, 11); */
+    }
+    .left img + p ,.right img + p {
+        font-size: 30px;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+    .right {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .right img {
+        left: 100%;
+    }
+    /* =====3,4 */
+    .content-img2{
+        display: flex;
+        flex-direction: column;
+        margin:0px;    
+        justify-content: space-around;
+    }
+    .content-img2 .right img {
+        width: 100%;
+        object-fit: cover;
+    
+    }
+    img {
+        border-top: 5px solid rgb(222, 200, 34);
+        width: 100%;
+    }
+    img:hover{
+        margin: 0px 10px;
+        animation: animation 3s infinite linear;
+    }
+  }
